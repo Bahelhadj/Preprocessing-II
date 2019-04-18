@@ -169,7 +169,12 @@ img {
   margin: 0 auto;
 }
 .nav {
-  border-bottom: dotted, black, 5px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  Justify-content: space-evenly;
+  width: 40%;
+  margin: 0;
 }
 .footer {
   width: 100%;
@@ -242,6 +247,17 @@ img {
   margin-bottom: 20px;
 }
 .home .header {
-  border-bottom: dashed lightgrey 2px;
+  display: flex;
   padding-bottom: 10px;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.home .topwords {
+  width: 60%;
+}
+.home .bord {
+  border-bottom: dashed lightgrey 2px;
+  width: 100%px;
 }
