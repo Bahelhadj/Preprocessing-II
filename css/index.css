@@ -146,6 +146,11 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -177,9 +182,10 @@ img {
 @media (max-width: 500px) {
   .nav {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 1rem;
+    width: 85%;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin: 0 auto;
   }
 }
 .footer {
@@ -235,9 +241,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .btn {
   background: #17A2B8;
@@ -273,11 +290,18 @@ img {
 }
 @media (max-width: 500px) {
   .home .topwords {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
   }
 }
 .home .bord {
   border-bottom: dashed lightgrey 2px;
   width: 100%px;
+}
+.home .welcdiv {
+  border-bottom: dashed lightgrey 2px;
+  padding-bottom: 1rem;
 }

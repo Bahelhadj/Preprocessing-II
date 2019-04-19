@@ -52,10 +52,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      display: flex;
+      flex-flow: row wrap;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
   .btn {
@@ -82,12 +88,19 @@
   .topwords {
     width: 60%;
     @media @mobile {
+      display: flex;
+      justify-content: center;
       width: 100%;
-      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
     }
   }
   .bord {
     .border;
     width: 100%px;
+  }
+  .welcdiv {
+    .border;
+    padding-bottom: 1rem;
   }
 }// home
