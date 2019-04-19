@@ -5,9 +5,12 @@
     color: white;
     display: flex;
     justify-content: @jc;
-    font-size: 2rem;
-    border-radius: 1rem;
-    padding: 10px;
+    font-size: 1.8rem;
+    border-radius: 1.5rem;
+    padding: 1.3rem;
+    @media @mobile {
+        width: 100%;
+    }
 }
 .border() {
     border-bottom: dashed lightgrey 2px;
