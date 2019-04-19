@@ -1,1 +1,17 @@
 // Mixins in here
+.button(@width, @jc) {
+    background: @eastern-blue;
+    width: @width;
+    color: white;
+    display: flex;
+    justify-content: @jc;
+    font-size: 1.8rem;
+    border-radius: 1.5rem;
+    padding: 1.3rem;
+    @media @mobile {
+        width: 100%;
+    }
+}
+.border() {
+    border-bottom: dashed lightgrey 2px;
+}

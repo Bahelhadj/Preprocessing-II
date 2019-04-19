@@ -5,17 +5,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      display: flex; 
+      flex-direction: column;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -26,21 +38,29 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
     .text-content {
       padding-left: 1%;
       padding-right: 0;
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 3rem;
+      .border;
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +72,58 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      display: flex;
+      flex-flow: row wrap;
+      width: 80%;
+      margin: 0 auto;
+      border-top: none;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
+  }
+  .btn {
+    .button(80%, Center);
+  }
+  .funpic {
+    margin-bottom: 20px;
+  }  
+  .header {
+    display: flex;
+    padding-bottom: 10px;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    @media @mobile {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+  }
+  .topwords {
+    width: 60%;
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .bord {
+    .border;
+    width: 100%px;
+  }
+  .welcdiv {
+    .border;
+    padding-bottom: 1rem;
   }
 }// home
